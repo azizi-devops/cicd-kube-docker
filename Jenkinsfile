@@ -8,7 +8,7 @@ pipeline {
 
     environment {
        
-        registery = "hani576/appimag"
+        registry = "hani576/appimag"
         registryCredentials = 'dockerhublogin'
       
     }
