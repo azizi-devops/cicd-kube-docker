@@ -1,11 +1,11 @@
 pipeline {
 
     agent any
-/*
+
 	tools {
-        maven "maven3"
+        maven "maven3.9.9"
     }
-*/
+
     environment {
        
         registery = "hani576/appimag"
@@ -84,7 +84,7 @@ pipeline {
             }
         }
 
-stage(" upload image to dockerhub ") {
+        stage(" upload image to dockerhub ") {
 
             steps {
                 script {
