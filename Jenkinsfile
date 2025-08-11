@@ -99,7 +99,7 @@ stage(" upload image to dockerhub ") {
 
         stage("Remove unused docker image") {
             steps {
-                sh "docker rmi $registry:"v$BUILD_NUMBER"
+                sh "docker rmi $registry:v$BUILD_NUMBER"
             
             }
         }
